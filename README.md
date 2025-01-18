@@ -3,6 +3,7 @@
 > Introducing a JavaScript automation script designed for animepahe.(ru·org·com). This script doesn't function as a batch downloader but excels in automating multiple links with its rich feature set. It seamlessly integrates with any browser that supports Tampermonkey, including popular options like Chrome, Firefox, Safari, and Brave. For mobile users, a browser like Kiwi Browser, which supports Chrome extensions for Tampermonkey, is recommended.
 
 #### Status: Currently Working v.0.1.5
+important note: disable ublock origin or any ads blocking extension in the pahe.win link for the bypass if not working. they messed up the script in those sections.
 
 #### Prerequisites
  - Use Google Chrome or any browser of your choice that supports the Tampermonkey extension.
