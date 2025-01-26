@@ -8,7 +8,7 @@ important note: disable ublock origin or any ads blocking extension in the pahe.
 #### Prerequisites
  - Use Google Chrome or any browser of your choice that supports the Tampermonkey extension.
  - Google Chrome Javascript Extension : [Tampermonkey](https://chrome.google.com/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo)
-
+ - Kiwi Browser Mobile Extension : [Tampermonkey-Legacy](https://chromewebstore.google.com/detail/tampermonkey-legacy/lcmhijbkigalmkeommnijlpobloojgfn)
 
 ```
 Usage:
