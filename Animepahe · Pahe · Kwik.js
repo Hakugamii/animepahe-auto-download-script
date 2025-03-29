@@ -2,8 +2,6 @@
 // @name         Animepahe · Pahe · Kwik
 // @namespace    https://PHCorner.net/
 // @version      0.1.5
-// @downloadURL  https://raw.githubusercontent.com/Ysilven/animepahe-auto-download-script/main/Animepahe%20%C2%B7%20Pahe%20%C2%B7%20Kwik.js
-// @updateURL    https://raw.githubusercontent.com/Ysilven/animepahe-auto-download-script/main/Animepahe%20%C2%B7%20Pahe%20%C2%B7%20Kwik.js
 // @description  animepahe auto script. use mouse scroll click to open multiple anime links.
 // @author       Arjien Ysilven
 // @match        https://pahe.win/*
@@ -544,11 +542,14 @@
     }
 
     function kwik() {
-        const form = document.querySelector('form');
-        if (form) {
-            form.submit();
-        } else {
-            setInterval(() => window.location.reload(), 3000);
-        }
+        setTimeout(() => {
+          let form = document.querySelector("form[action*='kwik.si']");
+          if (form) {
+              console.log("Form found! Submitting...");
+              form.submit();
+          } else {
+              console.log("Form still not found.");
+          }
+      }, 100); // Waits 3 seconds before checking
     }
 })();
