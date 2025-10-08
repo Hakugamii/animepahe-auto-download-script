@@ -9,6 +9,7 @@
 // @match        https://kwik.si/d/*
 // @match        https://kwik.cx/f/*
 // @match        https://kwik.cx/d/*
+// @match        https://animepahe.si/*
 // @match        https://animepahe.ru/*
 // @match        https://animepahe.org/*
 // @match        https://animepahe.com/*
@@ -23,11 +24,11 @@
     let enable_script = settings['Enable·Script'] ? true : false;
     let url_link = window.location.href;
     switch (true) {
-        case /animepahe\.(ru|org|com)\/?$/.test(url_link):
-        case /animepahe\.(ru|org|com)(\/\?page=\d+)?$/.test(url_link):
+        case /animepahe\.(si|ru|org|com)\/?$/.test(url_link):
+        case /animepahe\.(si|ru|org|com)(\/\?page=\d+)?$/.test(url_link):
             menu(1);
             break;
-        case /animepahe\.(ru|org|com)\/play\/.+\/.+/.test(url_link):
+        case /animepahe\.(si|ru|org|com)\/play\/.+\/.+/.test(url_link):
             menu(1);
             if(enable_script){
                 script();
@@ -35,7 +36,7 @@
                 console.log('script disabled');
             }
             break;
-        case /animepahe\.(ru|org|com)\/anime\/.+/.test(url_link):
+        case /animepahe\.(si|ru|org|com)\/anime\/.+/.test(url_link):
             menu(2);
             break;
         case /pahe\.win\/.+/.test(url_link):
